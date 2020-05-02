@@ -209,10 +209,12 @@ void LengthDisplay(void) {
 	LengthDisplayCDisplayStyle.body.opa = 190;
 	LengthDisplayCDisplayStyle.body.radius = 12;
 	LengthDisplayCDisplayStyle.text.color = LV_COLOR_BLACK;
+	LengthDisplayCDisplayStyle.text.font = &lv_font_roboto_12;
+	
 
 	CalcPageStyles();
 	lv_obj_t * lengthLabelTittleMCDisplay = lv_label_create(page4, NULL);
-	lv_label_set_text(lengthLabelTittleMCDisplay, " Patch Length");
+	lv_label_set_text(lengthLabelTittleMCDisplay, " Patch L(m.m.)");
 	lv_obj_align(lengthLabelTittleMCDisplay, NULL, LV_ALIGN_IN_TOP_RIGHT, -125, 105);
 	lv_obj_set_style(lengthLabelTittleMCDisplay, &McAL_BgStyle4);
 
@@ -235,10 +237,11 @@ void WidthDisplay(void) {
 	LengthDisplayCDisplayStyle.body.opa = 190;
 	LengthDisplayCDisplayStyle.body.radius = 12;
 	LengthDisplayCDisplayStyle.text.color = LV_COLOR_BLACK;
+	LengthDisplayCDisplayStyle.text.font = &lv_font_roboto_12;
 
 	CalcPageStyles();
 	lv_obj_t * lengthLabelTittleMCDisplay = lv_label_create(page4, NULL);
-	lv_label_set_text(lengthLabelTittleMCDisplay, " Patch Width");
+	lv_label_set_text(lengthLabelTittleMCDisplay, "Patch w(m.m.)");
 	lv_obj_align(lengthLabelTittleMCDisplay, NULL, LV_ALIGN_IN_TOP_RIGHT, -125, 135);
 	lv_obj_set_style(lengthLabelTittleMCDisplay, &McAL_BgStyle4);
 
@@ -261,10 +264,11 @@ void dielectricLengthDisplay(void) {
 	LengthDisplayCDisplayStyle.body.opa = 190;
 	LengthDisplayCDisplayStyle.body.radius = 12;
 	LengthDisplayCDisplayStyle.text.color = LV_COLOR_BLACK;
+	LengthDisplayCDisplayStyle.text.font = &lv_font_roboto_12;
 
 	CalcPageStyles();
 	lv_obj_t * lengthLabelTittleMCDisplay = lv_label_create(page4, NULL);
-	lv_label_set_text(lengthLabelTittleMCDisplay, " Patch Length");
+	lv_label_set_text(lengthLabelTittleMCDisplay, "Dielec. L(mm)");
 	lv_obj_align(lengthLabelTittleMCDisplay, NULL, LV_ALIGN_IN_TOP_RIGHT, -125, 165);
 	lv_obj_set_style(lengthLabelTittleMCDisplay, &McAL_BgStyle4);
 
@@ -287,10 +291,11 @@ void dielectricWidthDisplay(void) {
 	LengthDisplayCDisplayStyle.body.opa = 190;
 	LengthDisplayCDisplayStyle.body.radius = 12;
 	LengthDisplayCDisplayStyle.text.color = LV_COLOR_BLACK;
+	LengthDisplayCDisplayStyle.text.font = &lv_font_roboto_12;
 
 	CalcPageStyles();
 	lv_obj_t * lengthLabelTittleMCDisplay = lv_label_create(page4, NULL);
-	lv_label_set_text(lengthLabelTittleMCDisplay, " Path Width");
+	lv_label_set_text(lengthLabelTittleMCDisplay, " Dielec. w(mm)");
 	lv_obj_align(lengthLabelTittleMCDisplay, NULL, LV_ALIGN_IN_TOP_RIGHT, -125, 195);
 	lv_obj_set_style(lengthLabelTittleMCDisplay, &McAL_BgStyle4);
 
